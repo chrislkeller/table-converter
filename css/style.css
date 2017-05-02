@@ -24,7 +24,71 @@ table {
     width: 100%;
 }
 
+table th {
+    text-transform: capitalize;
+}
+
+table td mark {
+    display: none;
+}
+
+table tr td:first-child mark {
+    display: none;
+}
+
 tbody tr:nth-child(odd) td, tbody tr.odd td {
     background-color: #eee;
 }
 
+@media screen and (max-width: 550px) {
+
+    table {
+        border-top: 3px solid #4591B8
+        width: 100%;
+    }
+
+    table thead {
+        display: none;
+    }
+
+    table tbody, table tr, {
+        width: 100%
+    }
+
+    table tbody tr:nth-child(odd) td, table tbody tr.odd td {
+        background-color: #eee;
+    }
+
+    table td {
+        display: block;
+        padding: 10px 5px 10px 5px;
+    }
+
+    table td mark {
+        display: inline;
+        background: none;
+        color: #D17333;
+    }
+
+    table td mark:after {
+        content: ": ";
+        margin-right: 50%;
+    }
+
+    table tr td:first-child {
+        background: none;
+        font-weight: 800;
+        font-size: 1.0em;
+        border-bottom-color: #808080
+        padding-top: 15px;
+    }
+
+    table tr td:nth-child(2) {
+        padding-top: 10px;
+    }
+
+    table tr td:last-child {
+        padding-bottom: 20px;
+    }
+
+}
