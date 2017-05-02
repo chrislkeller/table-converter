@@ -1,14 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
     <head>
-        <meta charset="utf-8">
-        <title>Table converter</title>
-        <link href="css/style.css" rel="stylesheet">
+        <!--
+        _..
+        ____     _   _____   _     ___..-"""-.  `)^|   .-"""-..___    ____   _____  ____   _  __
+        |  _ \   / \ |_   _| / \   `-...___ `=.`-.`  \-`.=` ___...-`  |  _ \ | ____|/ ___| | |/ /
+        | | | | / _ \  | |  / _ \          `\  ` ##### `  /`          | | | ||  _|  \___ \ | ` /
+        | |_| |/ ___ \ | | / ___ \           `--;|||||;--`            | |_| || |___  ___) || . \
+        |____//_/   \_\|_|/_/   \_\             /\|||/\               |____/ |_____||____/ |_|\_\
+        _______________________________________ ( /;-;\ ) _________________________________________
+        `-...-`
+        -->
+        <!-- Created using v1.1.1 of the Los Angeles Times Data Desk's base templates -->
+        <!-- Learn more at cookbook.latimes.com -->
+        <!-- Good with data? -->
+        <!-- Tired of grinding on the same old apps? -->
+        <!-- Want to use your skills in defense of truth, justice and the American way? -->
+        <!-- Email datadesk@latimes.com and let us know you're out there. -->
+        <script type='text/javascript'>var _sf_startpt=(new Date()).getTime()</script>
+        <!-- METADATA -->
+        <title>Spreadsheet to Table Converter</title>
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="data desk, los angeles times, latimes, l.a. times" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="144x144" href="//cookbook.latimes.com/img/apple-touch-icon.png">
+        <link rel="icon" type="image/x-icon" href="//cookbook.latimes.com/img/favicon-32x32.ico" sizes="32x32">
+        <link rel="icon" type="image/x-icon" href="//cookbook.latimes.com/img/favicon-16x16.ico" sizes="16x16">
+        <link rel="publisher" href="//plus.google.com/u/0/112727226361732924638" />
+        <meta name="google-site-verification" content="a9pAUAoFTyj7Nut3H5OiQ-fUyyqdwdVT7VcFGICrpTo" />
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="//cookbook.latimes.com/bootstrap/2.3.2/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="//cookbook.latimes.com/css/ngux-tophat-1.1.1.min.css" />
+        <link rel="stylesheet" type="text/css" href="//cookbook.latimes.com/bootstrap/2.3.2/css/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" type="text/css" href="//cookbook.latimes.com/css/ngux-tophat-responsive-1.1.1.min.css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- JAVASCRIPT -->
+        <!--[if lt IE 9]>
+        <script type="text/javascript" src="//cookbook.latimes.com/js/html5shiv.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="//cookbook.latimes.com/js/jquery-1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="//cookbook.latimes.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="//cookbook.latimes.com/js/underscore-1.8.3-min.js"></script>
+        <script type="text/javascript" src="//cdn.gigya.com/js/socialize.js?apiKey=2_COh26GgfZDptreu0iQ9aknzT_Ig861qYxOHZVxizrZMTn81vygTB-ptN33wgCtrj"></script>
+        <script type="text/javascript" src="//cookbook.latimes.com/js/ngux-tophat-1.1.1.min.js"></script>
+        <!--[if lte IE 7]><script type="text/javascript" src="//cookbook.latimes.com/js/icons-ie7.js"></script><![endif]-->
+        <script type="text/javascript" src="//cookbook.latimes.com/js/ngux-ads-2.4.1.min.js"></script>
     </head>
-    <body>
-        <div class="container">
-            <h1>Table converter</h1>
-            <p>Copy and paste a spreadsheet into the input box below, and watch the html code appear.</p>
+    <body data-ad-path="4011/trb.latimes/news/datadesk" data-ad-ptype="s" data-ad-iframe-url="/static/ngux-tophat-ad-iframe.html" >
+        <!-- NAV -->
+        <nav title="Navigation">
+            <div id="tophat-container">
+                <div id="tophat">
+                    <span id="tophat-dropdown">
+                        <hr />
+                        <hr />
+                        <hr />
+                    </span>
+                    <a id="tophat-logo" href="//www.latimes.com/"></a>
+                    <div class="tophat-links">
+                        <ul>
+                            <li>
+                                <a href="//www.latimes.com/local">Local</a>
+                            </li>
+                            <li>
+                                <a href="//www.latimes.com/california">California</a>
+                            </li>
+                            <li>
+                                <a href="//www.latimes.com/sports">Sports</a>
+                            </li>
+                            <li>
+                                <a href="//www.latimes.com/entertainment">Entertainment</a>
+                            </li>
+                            <li>
+                                <a href="//www.latimes.com/nation">Nation</a>
+                            </li>
+                            <li>
+                                <a href="//www.latimes.com/world">World</a>
+                            </li>
+                            <li>
+                                <a href="//www.latimes.com/business">Business</a>
+                            </li>
+                            <li>
+                                <a href="//www.latimes.com/opinion">Opinion</a>
+                            </li>
+                            <li>
+                                <a href="//www.latimes.com/style">Lifestyle</a>
+                            </li>
+                            <li>
+                                <a href="//www.latimes.com/travel">Travel</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- CONTENT GOES HERE -->
+        <div class="container" id="container">
+            <article>
+                <h1>Spreadsheet to Table Converter</h1>
+                <div id="content-article-metadata">
+                    <p><span class="credits">Based on <a href="https://twitter.com/kevinschaul">Kevin Schaul's</a> <a href="https://github.com/kevinschaul/table-converter" target="blank">Table Converter</a>, which is based on Shan Carter's <a href="http://shancarter.github.io/mr-data-converter/" target="blank">Mr. Data Converter</a></span> | <span class="pubdate">Updated May 1, 2017</span></p>
+                </div>
+                <div id="content-article-text">
+                    <p>Copy and paste cells from a spreadsheet document into the input box below to see what your table will look like in the preview box. Copy the resulting html code into a CMS story and give yourself a hand. You just made a table.</p>
+                </div>
+            </article>
             <div class="row">
                 <div class="span6">
                     <h2>Input</h2>
@@ -19,6 +116,7 @@
                     <textarea class="input" id="dataOutput"></textarea>
                 </div>
             </div>
+            <!--
             <div class="row">
                 <div class="span12">
                     <h4>Options</h4>
@@ -26,9 +124,7 @@
                         <input type="checkbox" id="checkbox-sortable">Sortable</input>
                         <br />
                         <label for="select-sort">Default sort order:</label>
-                        <select id="select-sort">
-                            <!-- options are filled in with js -->
-                        </select>
+                        <select id="select-sort"></select>
                         <select id="select-sort-order">
                             <option value="0">Ascending</option>
                             <option value="1">Descending</option>
@@ -36,18 +132,90 @@
                     </form>
                 </div>
             </div>
+            -->
             <div class="row">
                 <div class="span12">
                     <h2>Preview</h2>
                     <div id="preview"></div>
                 </div>
             </div>
-            </div> <!-- /container -->
-            <script type="text/javascript" src="js/jquery.min.js"></script>
-            <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
-            <script type="text/javascript" src="js/CSVParser.js"></script>
-            <script type="text/javascript" src="js/DataGridRenderer.js"></script>
-            <script type="text/javascript" src="js/DataConverter.js"></script>
-            <script type="text/javascript" src="js/script.js"></script>
+        </div>
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+        <script type="text/javascript" src="js/CSVParser.js"></script>
+        <script type="text/javascript" src="js/DataGridRenderer.js"></script>
+        <script type="text/javascript" src="js/DataConverter.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <!-- Google Analytics code -->
+        <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-22575524-1', 'latimes.com');
+        ga('send', 'pageview');
+        </script>
+        <script type="text/javascript">
+        ((((window.trb || (window.trb = {})).data || (trb.data = {})).metrics || (trb.data.metrics = {})).thirdparty = {
+        // Page naming convention:
+        //  <site-slug>:<app-slug>:<path>:<datadesk-slug>-<page-slug>:<content-type>.
+            // Example:
+            //  lat:projects.latimes.com:local:data-pat-tillman:individualarticle.
+            //  (Don't miss the period at the end.)
+            pageName: 'lat:.',
+            channel: 'local', // Path
+            server: 'www.latimes.com', // Full domain
+            hier1: 'latimes:local', // Path (with latimes prefix)
+            hier2: 'local', // Path (again)
+            prop1: 'D=pageName',
+            prop2: 'local', // Path (again!)
+            prop38: 'individualarticle', // Content type
+            eVar1: window.location.href, // This URL
+            eVar2: document.referrer, // The referring URL
+            prop57: 'D=c38',
+            eVar20: 'latimes',
+            eVar21: 'D=c38',
+            eVar34: 'D=ch',
+            eVar35: 'D=pageName',
+            events: ''
+            });
+            </script>
+            <script src="//www.latimes.com/thirdpartyservice?disablenav=true"></script>
+            <footer title="Footer">
+                <nav id="footer-container">
+                    <div id="footer">
+                        <div id="tos">
+                            <a href="//www.tronc.com/central-terms-of-service/">Terms of Service</a> |
+                            <a href="//www.tronc.com/privacy-policy/">Privacy<span class="hidden-phone"> Policy</span></a> |
+                            <a href="//www.latimes.com/lat-about-our-ads,0,3875412.htmlstory"><span class="hidden-phone">About Our </span>Ads</a> |
+                            <a href="//www.latimes.com/services/site/la-reprint-request-splash,0,6731163.htmlstory">&copy; <script type="text/javascript">document.write(new Date().getFullYear())</script></a> |
+                            <a href="//www.latimes.com/about/"><span class="hidden-phone">About This Site</span></a>
+                        </div>
+                    </div>
+                </nav>
+            </footer>
+            <script type="text/javascript">
+            var _sf_async_config={};
+            /** CONFIGURATION START **/
+            _sf_async_config.uid = 3908;
+            _sf_async_config.domain = 'www.latimes.com';
+            _sf_async_config.useCanonical = true;
+            _sf_async_config.sections = '';
+            _sf_async_config.authors = 'Data Desk';
+            /** CONFIGURATION END **/
+            (function(){
+            function loadChartbeat() {
+            window._sf_endpt=(new Date()).getTime();
+            var e = document.createElement('script');
+            e.setAttribute('language', 'javascript');
+            e.setAttribute('type', 'text/javascript');
+            e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+            document.body.appendChild(e);
+            }
+            var oldonload = window.onload;
+            window.onload = (typeof window.onload != 'function') ?
+            loadChartbeat : function() { oldonload(); loadChartbeat(); };
+            })();
+            </script>
         </body>
     </html>

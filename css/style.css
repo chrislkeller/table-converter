@@ -1,26 +1,23 @@
 .row {
     clear: both;
 }
-.span6 {
-    width: 50%;
-    float: left;
-}
+
 textarea.input {
     width: 100%;
     height: 200px;
 }
+
 #preview {
     padding: 15px;
     border: 1px solid #ccc;
 }
+
 form {
     text-align: left;
 }
 
 table {
     text-align: left;
-    border-collapse: collapse;
-    margin:0 0 14px 0;
     width: 100%;
 }
 
@@ -36,9 +33,9 @@ table tr td:first-child mark {
     display: none;
 }
 
-tbody tr:nth-child(odd) td, tbody tr.odd td {
+/*tbody tr:nth-child(odd) td, tbody tr.odd td {
     background-color: #eee;
-}
+}*/
 
 @media screen and (max-width: 550px) {
 
@@ -55,9 +52,9 @@ tbody tr:nth-child(odd) td, tbody tr.odd td {
         width: 100%
     }
 
-    table tbody tr:nth-child(odd) td, table tbody tr.odd td {
+/*    table tbody tr:nth-child(odd) td, table tbody tr.odd td {
         background-color: #eee;
-    }
+    }*/
 
     table td {
         display: block;

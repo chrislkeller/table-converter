@@ -10,7 +10,7 @@ var DataGridRenderer = {
     // HTML Table
     //---------------------------------------
 
-    html: function(dataGrid, headerNames, headerTypes, indent, newLine, id) {
+    html: function(dataGrid, headerNames, headerTypes, indent, newLine, id, classname) {
         //inits...
         var commentLine = "<!--";
         var commentLineEnd = "-->";
@@ -18,7 +18,7 @@ var DataGridRenderer = {
         var numRows = dataGrid.length;
         var numColumns = headerNames.length;
         //begin render loop
-        outputText += "<table id=\"" + id + "\">" + newLine;
+        outputText += "<table id=\"" + id + "\" class=\"" + id + "\">" + newLine;
         outputText += indent + "<thead>" + newLine;
         outputText += indent + indent + "<tr>" + newLine;
         for (var j = 0; j < numColumns; j++) {
