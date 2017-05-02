@@ -1,64 +1,53 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Table converter</title>
-
-    <link href="css/seattletimes.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-
-<div class="container">
-
-    <h1>Table converter</h1>
-    <p>Copy and paste a spreadsheet into the input box below, and watch the html code appear.</p>
-
-    <div class="row">
-        <div class="span6">
-            <h2>Input</h2>
-            <textarea class="input" id="dataInput"></textarea>
-        </div>
-        <div class="span6">
-            <h2>Output</h2>
-            <textarea class="input" id="dataOutput"></textarea>
-        </div>
-    </div>
-    <div class="row">
-        <div class="span12">
-            <h4>Options</h4>
-            <form id="form-options">
-                <input type="checkbox" id="checkbox-sortable">Sortable</input>
-                <br />
-                <label for="select-sort">Default sort order:</label>
-                <select id="select-sort">
-                <!-- options are filled in with js -->
-                </select>
-                <select id="select-sort-order">
-                    <option value="0">Ascending</option>
-                    <option value="1">Descending</option>
-                </select>
-            </form>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="span12">
-            <h2>Preview</h2>
-            <div id="preview"></div>
-        </div>
-    </div>
-
-</div> <!-- /container -->
-
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
-<script type="text/javascript" src="js/CSVParser.js"></script>
-<script type="text/javascript" src="js/DataGridRenderer.js"></script>
-<script type="text/javascript" src="js/DataConverter.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-
-</body>
-</html>
+    <head>
+        <meta charset="utf-8">
+        <title>Table converter</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Table converter</h1>
+            <p>Copy and paste a spreadsheet into the input box below, and watch the html code appear.</p>
+            <div class="row">
+                <div class="span6">
+                    <h2>Input</h2>
+                    <textarea class="input" id="dataInput"></textarea>
+                </div>
+                <div class="span6">
+                    <h2>Output</h2>
+                    <textarea class="input" id="dataOutput"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h4>Options</h4>
+                    <form id="form-options">
+                        <input type="checkbox" id="checkbox-sortable">Sortable</input>
+                        <br />
+                        <label for="select-sort">Default sort order:</label>
+                        <select id="select-sort">
+                            <!-- options are filled in with js -->
+                        </select>
+                        <select id="select-sort-order">
+                            <option value="0">Ascending</option>
+                            <option value="1">Descending</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12">
+                    <h2>Preview</h2>
+                    <div id="preview"></div>
+                </div>
+            </div>
+            </div> <!-- /container -->
+            <script type="text/javascript" src="js/jquery.min.js"></script>
+            <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+            <script type="text/javascript" src="js/CSVParser.js"></script>
+            <script type="text/javascript" src="js/DataGridRenderer.js"></script>
+            <script type="text/javascript" src="js/DataConverter.js"></script>
+            <script type="text/javascript" src="js/script.js"></script>
+        </body>
+    </html>
