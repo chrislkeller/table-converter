@@ -90,6 +90,26 @@ DataConverter.prototype.convert = function(){
         var headerTypes = parseOutput.headerTypes;
         var errors = parseOutput.errors;
         this.outputText = DataGridRenderer[this.outputDataType](dataGrid, headerNames, headerTypes, this.indent, this.newLine, this.id);
+        var styles = "";
+        styles += "<style type=\"text/css\">\n";
+        styles += "\ttable {text-align: left; border-collapse: collapse; margin:0 0 14px 0; width: 100%;}\n";
+        styles += "\ttable th {text-transform: capitalize;}\n";
+        styles += "\ttable td mark {display: none;}\n";
+        styles += "\ttable tr td:first-child mark {display: none;}\n";
+        styles += "\ttbody tr:nth-child(odd) td, tbody tr.odd td {background-color: #eee;}\n";
+        styles += "\t@media screen and (max-width: 550px){\n";
+        styles += "\t\ttable {border-top: 3px solid #4591B8; width: 100%;}\n";
+        styles += "\t\ttable thead {display: none;}\n";
+        styles += "\t\ttable tbody, table tr, {width: 100%}\n";
+        styles += "\t\ttable tbody tr:nth-child(odd) td, table tbody tr.odd td {background-color: #eee;}\n";
+        styles += "\t\ttable td {display: block; padding: 10px 5px 10px 5px;}\n";
+        styles += "\t\ttable td mark {display: inline; background: none; color: #D17333; }\n";
+        styles += "\t\ttable td mark:after {content: \": \"; margin-right: 50%; }\n";
+        styles += "\t\ttable tr td:first-child {background: none; font-weight: 800; font-size: 1.0em; border-bottom-color: #808080; padding-top: 15px;}\n";
+        styles += "\t\ttable tr td:nth-child(2) {padding-top: 10px;}\n";
+        styles += "\t\ttable tr td:last-child {padding-bottom: 20px;}\n";
+        styles += "\t}\n";
+        styles += "</style>\n";
         var scripts = "";
         if (this.sortable) {
             scripts += "<script type=\"text/javascript\" src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js\></script>\n";
@@ -99,7 +119,7 @@ DataConverter.prototype.convert = function(){
             scripts += "$(\"#table-1\").tablesorter("+ JSON.stringify(this.sortOptions) + ");\n";
         };
         scripts += "</script>\n";
-        this.outputTextArea.val(errors + scripts + this.outputText);
+        this.outputTextArea.val(errors + styles + scripts + this.outputText);
         $(this.previewDiv).html(this.outputText);
     };
     //TODO if we want to sort..
