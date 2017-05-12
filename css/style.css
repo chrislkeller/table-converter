@@ -18,11 +18,31 @@ form {
 
 table {
     text-align: left;
+    max-width: 650px;
     width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #CCC;
+    margin: 50px auto;
+    font-family: 'Benton Gothic Regular', Arial, sans-serif;
+    font-size: 15px;
 }
 
 table th {
     text-transform: capitalize;
+}
+
+table th.string, table td.string {
+    text-align: left;
+}
+
+table th.float, table td.float {
+    text-align: right;
+}
+
+table th.int, table td.int {
+    text-align: right;
 }
 
 table td mark {
@@ -52,9 +72,23 @@ table tr td:first-child mark {
         width: 100%
     }
 
-/*    table tbody tr:nth-child(odd) td, table tbody tr.odd td {
+    /*
+    table tbody tr:nth-child(odd) td, table tbody tr.odd td {
         background-color: #eee;
-    }*/
+    }
+    */
+
+    table th.string, table td.string {
+        text-align: left;
+    }
+
+    table th.float, table td.float {
+        text-align: left;
+    }
+
+    table th.int, table td.int {
+        text-align: left;
+    }
 
     table td {
         display: block;
@@ -64,18 +98,17 @@ table tr td:first-child mark {
     table td mark {
         display: inline;
         background: none;
-        color: #D17333;
+        color: #282828;
     }
 
     table td mark:after {
         content: ": ";
-        margin-right: 50%;
     }
 
     table tr td:first-child {
         background: none;
-        font-weight: 800;
-        font-size: 1.0em;
+        font-weight: 600;
+        font-size: 1.1em;
         border-bottom-color: #808080
         padding-top: 15px;
     }
